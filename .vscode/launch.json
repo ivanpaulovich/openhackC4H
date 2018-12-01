@@ -10,10 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/bin/Debug/netcoreapp2.2/openhackC4H.dll",
+            "program": "${workspaceFolder}/tests/MM.Tests/bin/Debug/netcoreapp2.2/MM.Tests.dll",
             "args": [],
-            "env": {"GOOGLE_APPLICATION_CREDENTIALS":"/Users/ivanpaulovich/google.json"},
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/tests/MM.Tests",
             // For more information about the 'console' field, see https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md#console-terminal-window
             "console": "internalConsole",
             "stopAtEntry": false,

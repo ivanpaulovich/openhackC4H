@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/openhackC4H.csproj"
+                "${workspaceFolder}/tests/MM.Tests/MM.Tests.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
