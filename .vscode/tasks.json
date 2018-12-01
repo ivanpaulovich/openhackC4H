@@ -7,7 +7,8 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/tests/MM.Tests/MM.Tests.csproj"
+                "${workspaceFolder}/tests/MM.Tests/MM.Tests.csproj",
+                "GOOGLE_APPLICATION_CREDENTIALS=/Users/ivanpaulovich/google.json"
             ],
             "problemMatcher": "$msCompile"
         }
