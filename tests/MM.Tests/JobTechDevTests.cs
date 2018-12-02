@@ -5,8 +5,9 @@ namespace MM.Tests
     using MM.Domain;
     using MM.Infrastructure.JobTechDev;
     using System.Threading.Tasks;
+    using System.Collections.Generic;
 
-    public sealed class JobToEmojiTests
+    public sealed class JobTechDevTests
     {
         [Fact]
         public void GetJobById_ReturnsSingleJob()
@@ -24,6 +25,23 @@ namespace MM.Tests
             Assert.Equal(expectedJobId, job.Id);
             Assert.NotEmpty(job.Title);
             Assert.NotEmpty(job.Body);
+        }
+
+        [Fact]
+        public void GetJobsByKeyword_ReturnsJobs()
+        {
+            // Arrange
+
+            string baseUrl = "https://api.arbetsformedlingen.se";
+            IJobTechDevService jobTechDevService = new JobTechDevService(baseUrl);
+            string keyword = "javascript";
+
+            // Act
+            List<Job> jobs = jobTechDevService.SearchJobs(keyword).Result;
+
+            // Assert
+            Assert.NotNull(jobs);
+            Assert.NotEmpty(jobs);
         }
     }
 }

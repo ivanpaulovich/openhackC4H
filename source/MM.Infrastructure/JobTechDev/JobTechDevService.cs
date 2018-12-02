@@ -5,6 +5,7 @@ using MM.Domain.Services;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace MM.Infrastructure.JobTechDev
 {
@@ -42,6 +43,29 @@ namespace MM.Infrastructure.JobTechDev
             }
 
             throw new System.Exception($"Job {jobId} not found.");
+        }
+
+        public async Task<List<Job>> SearchJobs(string keyword)
+        {
+            HttpResponseMessage response = await _httpClient.GetAsync($"/af/v0/platsannonser/matchning?nyckelord={keyword}&sida=1&antalrader=20");
+            if (response.IsSuccessStatusCode)
+            {
+                string jobs = await response.Content.ReadAsStringAsync();
+                dynamic jObject = JsonConvert.DeserializeObject<dynamic>(jobs);
+                dynamic jobsJson = jObject.matchningslista.matchningdata;
+                
+                List<Job> result = new List<Job>();
+
+                foreach(dynamic jobJson in jobsJson)
+                {
+                    var loadedJob = await GetJob(System.Convert.ToInt32(jobJson.annonsid));
+                    result.Add(loadedJob);
+                }
+                
+                return result;
+            }
+
+            throw new System.Exception($"Search error.");
         }
     }
 }
