@@ -58,8 +58,11 @@ namespace MM.Infrastructure.JobTechDev
 
                 foreach(dynamic jobJson in jobsJson)
                 {
-                    var loadedJob = await GetJob(System.Convert.ToInt32(jobJson.annonsid));
-                    result.Add(loadedJob);
+                    try
+                    {
+                        var loadedJob = await GetJob(System.Convert.ToInt32(jobJson.annonsid));
+                        result.Add(loadedJob);
+                    } catch(System.Exception ex) { }
                 }
                 
                 return result;
