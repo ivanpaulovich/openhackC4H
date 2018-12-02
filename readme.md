@@ -4,8 +4,6 @@
 
 Classify Jobs description accordingly to a Natural Language then translate the results into Emoji!
 
-## Apache Licence
-
 ## Dev Environment
 
 * Visual Studio Code
@@ -25,3 +23,5 @@ Classify Jobs description accordingly to a Natural Language then translate the r
 * https://github.com/ivanpaulovich
 * https://github.com/Nitinbabariya
 * https://github.com/kersheryl
+
+## Apache Licence
