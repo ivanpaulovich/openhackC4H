@@ -2,7 +2,7 @@
 
 ## JobTechDev
 
-Classify Jobs accordingly to a Natural Language then translate the results to Emoji!
+Classify Jobs description accordingly to a Natural Language then translate the results into Emoji!
 
 ## Apache Licence
 
@@ -22,7 +22,7 @@ C#
 
 # Team members
 
-* @ivanpaulovich
-* @nitin
-* @sheril
+* https://github.com/ivanpaulovich
+* hhttps://github.com/Nitinbabariya
+* https://github.com/kersheryl
 
