@@ -23,6 +23,6 @@ C#
 # Team members
 
 * https://github.com/ivanpaulovich
-* hhttps://github.com/Nitinbabariya
+* https://github.com/Nitinbabariya
 * https://github.com/kersheryl
 
