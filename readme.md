@@ -11,7 +11,7 @@ Classify Jobs description accordingly to a Natural Language then translate the r
 * Visual Studio Code
 * .NET
 
-## Services used (API, cloud-services etc.)
+## :globe_with_meridians: Services used (API, cloud-services etc.)
 
 Google Natural Language
 JobTechDev
@@ -20,7 +20,7 @@ JobTechDev
 
 C#
 
-## Team members
+## :runner: Team members
 
 * https://github.com/ivanpaulovich
 * https://github.com/Nitinbabariya
