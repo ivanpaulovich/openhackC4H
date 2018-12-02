@@ -13,12 +13,12 @@ Classify Jobs description accordingly to a Natural Language then translate the r
 
 ## :globe_with_meridians: Services used (API, cloud-services etc.)
 
-Google Natural Language
-JobTechDev
+* Google Natural Language
+* JobTechDev
 
 ## Languages used
 
-C#
+* C#
 
 ## :runner: Team members
 
