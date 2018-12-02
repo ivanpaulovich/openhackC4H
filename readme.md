@@ -1,4 +1,4 @@
-# Job2Emoji
+# Job2Emoji Team
 
 ## JobTechDev
 
@@ -6,23 +6,22 @@ Classify Jobs description accordingly to a Natural Language then translate the r
 
 ## Apache Licence
 
-# Dev Environment
+## Dev Environment
 
 * Visual Studio Code
 * .NET
 
-# Services used (API, cloud-services etc.)
+## Services used (API, cloud-services etc.)
 
 Google Natural Language
 JobTechDev
 
-# Languages used
+## Languages used
 
 C#
 
-# Team members
+## Team members
 
 * https://github.com/ivanpaulovich
 * https://github.com/Nitinbabariya
 * https://github.com/kersheryl
-
