@@ -2,7 +2,7 @@
 
 ## JobTechDev
 
-Classify Jobs description accordingly to a Natural Language then translate the results into Emoji!
+Classify Jobs description accordingly to a Natural Language then translate the categories found into Emoji!
 
 ## Dev Environment
 
